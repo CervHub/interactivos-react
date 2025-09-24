@@ -1,4 +1,6 @@
+import AlphabetSoup from '@/components/game/alphabetSoup/AlphabetSoup';
 import GameLayout from '@/components/game/GameLayout';
+import ImageBoard from '@/components/game/ImageBoard';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head, usePage } from '@inertiajs/react';
@@ -20,7 +22,8 @@ export default function Slots() {
 
                     {/* Contenido principal: GameLayout maneja el canvas y UI del juego */}
                     <div>
-                        <GameLayout virtualWidth={1200} virtualHeight={600} />
+                        {/* <ImageBoard /> */}
+                        <AlphabetSoup />
                     </div>
         </AppLayout>
     );
